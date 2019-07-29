@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    android:id="@+id/bottomsheet"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@drawable/button_background"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+    app:behavior_peekHeight="40dp"
+    app:behavior_hideable="false"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DetailsActivity">
+
+        <ImageView
+            android:id="@+id/imagearrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_centerHorizontal="true"
+            android:src="@android:drawable/arrow_up_float"/>
+
+        <TextView
+            android:id="@+id/textviewId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="@string/text_bottomsheet_id"
+            android:layout_margin="20dp"
+            android:textStyle="bold"
+            android:textSize="@dimen/bottom_sheet_text_size"/>
+
+        <TextView
+            android:id="@+id/textviewTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_alignParentRight="true"
+            android:layout_margin="20dp"
+            android:text="@string/text_bottomsheet_time"
+            android:textSize="@dimen/bottom_sheet_text_size"/>
+
+    <com.global.globalapp.widgets.SwipeButton
+        android:id="@+id/swipe_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        app:button_bottom_padding="18dp"
+        app:button_image_height="60dp"
+        app:button_image_width="60dp"
+        app:button_left_padding="38dp"
+        app:button_right_padding="38dp"
+        app:button_top_padding="18dp"
+        app:initial_state="disabled"
+        app:inner_text_line1="@string/text_line1_swipe_button"
+        app:inner_text_line2="@string/text_line2_swipe_button"
+        app:button_image_disabled="@drawable/ic_swipe"
+        app:button_background="@drawable/ic_swipe"
+        app:inner_text_bottom_padding="18dp"
+        app:inner_text_color="@android:color/white"
+        app:inner_text_size="16sp"
+        app:inner_text_top_padding="18dp"
+        android:layout_below="@id/textviewId"/>
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">GlobalApp</string>
+
+    <!-- Strings related to login -->
+    <string name="text_username">Username</string>
+    <string name="text_password">Password</string>
+    <string name="text_sign_in">Sign In</string>
+
+    <string name="action_login">Login</string>
+    <string name="action_forgot_password">Forgot Password?</string>
+
+    <string name="error_field_required">This field is required</string>
+
+    <string name="text_active">Active</string>
+    <string name="text_task">Tasks</string>
+
+    <string name="text_hello">Hello, Mike</string>
+    <string name="text_line1_swipe_button">ON THE WAY</string>
+    <string name="text_line2_swipe_button">Swipe to complete</string>
+
+    <string name="text_bottomsheet_id">ID:803312</string>
+    <string name="text_bottomsheet_time">03.12</string>
+
+    <string name="error_permisson_required">Cant load maps without all the permissions granted</string>
+    <string name="msg_location_tracking">Getting current location</string>
+
+</resources>
